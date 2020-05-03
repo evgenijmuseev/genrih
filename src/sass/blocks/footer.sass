@@ -1,0 +1,25 @@
+.footer
+    padding: 30px 0
+    background-color: $light-color
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &-text
+        &__office
+            span
+                font-weight: 700
+                color: $blue-color
+        &__phone
+            color: $main-color
+            font-weight: 500
+            display: block
+            margin-top: 7px
+@media (max-width: 576px)
+    .footer
+        &-block
+            justify-content: center
+        &-text
+            margin-top: 20px
+            text-align: center

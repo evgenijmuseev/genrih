@@ -1,0 +1,79 @@
+.contacts
+    background-color: $grey-color
+    &__title
+        margin-bottom: 20px
+        span
+            color: $main-color
+    &__subtitle
+        display: block
+        text-align: center
+        margin-bottom: 40px
+    &__form
+        text-align: center
+        margin-bottom: 60px
+        input
+            margin-right: 15px
+            padding: 7px
+            height: 42px
+            width: 280px
+    &-block
+        display: flex
+        justify-content: space-between
+    &-info
+        &-item
+            display: flex
+            align-items: center
+            margin-bottom: 40px
+            &__img
+                margin-right: 50px
+        &__text
+            h3
+                color: $blue-color
+                font-size: 1.75rem
+                margin-bottom: 10px
+                &:nth-child(even)
+                    color: $main-color
+    &-person
+        display: flex
+        align-items: center
+        &__img
+            margin-right: 30px
+            border: 10px solid $light-color
+            border-radius: 110%
+            box-shadow: 5px 5px 11px 4px rgba(0, 0, 0, 0.1)
+    &-text
+        &__title
+            color: $blue-color
+            font-size: 1.75rem
+        &__subtitle
+            display: block
+            font-size: 0.875rem
+            color: $dark-color
+            margin-top: 7px
+            margin-bottom: 20px
+        &__phone
+            font-size: 1.875rem
+            color: $main-color
+            display: block
+            font-weight: 500
+@media (max-width: 992px)
+    .contacts
+        &-block
+            flex-wrap: wrap
+            justify-content: center
+@media (max-width: 768px)
+    .contacts
+        &-person
+            flex-wrap: wrap
+            justify-content: center
+            &__img
+                margin-bottom: 30px
+        &__form
+            input
+                margin-bottom: 15px
+@media (max-width: 576px)
+    .contacts
+        &__form
+            input
+                width: auto
+                margin-bottom: 15px

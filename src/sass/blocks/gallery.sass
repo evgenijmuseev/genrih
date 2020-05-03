@@ -1,0 +1,21 @@
+.gallery
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-
+        text-align: center
+        &__img
+            flex-basis: 33%
+            margin-bottom: 40px
+@media (max-width: 992px)
+    .gallery
+        &-block
+            justify-content: center
+            &__img
+                flex-basis: 45%
+@media (max-width: 992px)
+    .gallery
+        &-block
+            &__img
+                flex-basis: 55%
+    

@@ -1,0 +1,28 @@
+.rate
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        table
+            border-top: 5px solid $main-color
+            flex-basis: 45%
+            thead
+                tr
+                    td
+                        color: $blue-color
+                        font-weight: 700
+                        padding: 10px 0
+            tbody
+                tr
+                    &:nth-child(even)
+                        background-color: lighten($blue-color, 55%)
+                    td
+                        padding: 10px 0
+                        color: $dark-color
+@media (max-width: 992px)
+    .rate
+        &-block
+            justify-content: center
+            table
+                flex-basis: 80%
+                margin-bottom: 40px
